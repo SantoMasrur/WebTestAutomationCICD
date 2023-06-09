@@ -23,7 +23,7 @@ jobs:
       id: sanityTest
       run: ./gradlew automationTest -DType=ParallelTest  
     - name: Send email report
-      if: steps.sanityTest.outcome != 'success'
+#       if: steps.sanityTest.outcome != 'success'
       uses: dawidd6/action-send-mail@v2
       with:
         server_address: smtp.gmail.com
