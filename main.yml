@@ -21,7 +21,7 @@ jobs:
     - name: Build with Gradle
       continue-on-error: true
       id: sanityTest
-      run: ./gradlew test --info # Run our tests using Gradle
+      run: ./gradlew automationTest -DType=ParallelTest  
     - name: Send email report
       if: steps.sanityTest.outcome != 'success'
       uses: dawidd6/action-send-mail@v2
@@ -35,7 +35,7 @@ jobs:
           Hi,
           Please find attached the automated test report.
         from: Github Actions
-        to: tasnim@techeureka.com
+        to: santomasrur6774@gmail.com
         content_type: text/html
           # Optional converting Markdown to HTML (set content_type to text/html too):
         convert_markdown: true
