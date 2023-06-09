@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRunner.CucumberRunner$CucumberRunnerTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-06-09T10:26:30" hostname="SANTO" time="24.495">
+  <properties/>
+  <testcase name="runScenario[0](&quot;Add new customer&quot;, &quot;Optional[Add New Customer]&quot;)" classname="TestRunner.CucumberRunner$CucumberRunnerTests" time="18.179"/>
+  <testcase name="runScenario[1](&quot;Open new account&quot;, &quot;Optional[Open New Account]&quot;)" classname="TestRunner.CucumberRunner$CucumberRunnerTests" time="3.168"/>
+  <testcase name="runScenario[2](&quot;Delete account&quot;, &quot;Optional[Delete an account]&quot;)" classname="TestRunner.CucumberRunner$CucumberRunnerTests" time="3.146"/>
+  <system-out><![CDATA[
+@smoke
+Scenario Outline: Add new customer               # src/test/resources/features/01AddNewCustomer.feature:13
+  Given user has base url                        # StepDefinition.AddCusStepdefs.userHasBaseUrl()
+  When click bank manager login button           # StepDefinition.AddCusStepdefs.clickBankManagerLoginButton()
+  And click add account button                   # StepDefinition.AddCusStepdefs.clickAddAccountButton()
+  And user enter 'Santo' and 'Masrur' and '1216' # StepDefinition.AddCusStepdefs.userEnterFirstNameAndLastNameAndPostCode(java.lang.String,java.lang.String,java.lang.String)
+  And click addCustomer button                   # StepDefinition.AddCusStepdefs.clickAddCustomerButton()
+Customer added successfully with customer id :6
+  Then click ok                                  # StepDefinition.AddCusStepdefs.clickOk()
+
+@smoke
+Scenario: Open new account                  # src/test/resources/features/02OpenAccount.feature:5
+  Given User in open account page           # StepDefinition.OpenAccountMyStepdefs.userInOpenAccountPage()
+  When user select name from dropdown menu  # StepDefinition.OpenAccountMyStepdefs.userSelectNameFromDropdownMenu()
+  And select currency from dropdown menu    # StepDefinition.OpenAccountMyStepdefs.selectCurrencyFromDropdownMenu()
+  And click process button                  # StepDefinition.OpenAccountMyStepdefs.clickProcessButton()
+Account created successfully with account Number :1016
+  Then user successfully navigate the popup # StepDefinition.OpenAccountMyStepdefs.userSuccessfullyNavigateThePopup()
+
+@smoke
+Scenario: Delete account                    # src/test/resources/features/03DeleteCustomer.feature:5
+  Given user in customers page              # StepDefinition.DeleteStepdefs.userInCustomersPage()
+  When user search names                    # StepDefinition.DeleteStepdefs.userSearchNames()
+  And delete the account                    # StepDefinition.DeleteStepdefs.deleteTheAccount()
+  Then successfully account will be deleted # StepDefinition.DeleteStepdefs.successfullyAccountWillBeDeleted()
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 58947
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 09, 2023 4:26:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 09, 2023 4:26:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: a no-op implementation
+Jun 09, 2023 4:26:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 114.
+Jun 09, 2023 4:26:32 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.1.2` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>

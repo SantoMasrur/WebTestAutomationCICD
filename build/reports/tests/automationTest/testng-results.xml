@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24796" started-at="2023-06-09T16:26:30 BDT" finished-at="2023-06-09T16:26:55 BDT">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberRunner$CucumberRunnerTests@4facf68f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Cucumber Test Run" duration-ms="24796" started-at="2023-06-09T16:26:30 BDT" finished-at="2023-06-09T16:26:55 BDT">
+      <class name="TestRunner.CucumberRunner$CucumberRunnerTests">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.CucumberRunner$CucumberRunnerTests@4facf68f]" name="setUpClass" is-config="true" duration-ms="268" started-at="2023-06-09T16:26:30 BDT" finished-at="2023-06-09T16:26:30 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberRunner$CucumberRunnerTests@4facf68f]" name="runScenario" duration-ms="18179" started-at="2023-06-09T16:26:30 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-09T16:26:48 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add new customer"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add New Customer]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberRunner$CucumberRunnerTests@4facf68f]" name="runScenario" duration-ms="3168" started-at="2023-06-09T16:26:48 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-09T16:26:52 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Open new account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Open New Account]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.CucumberRunner$CucumberRunnerTests@4facf68f]" name="runScenario" duration-ms="3146" started-at="2023-06-09T16:26:52 BDT" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-06-09T16:26:55 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Delete account"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Delete an account]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.CucumberRunner$CucumberRunnerTests@4facf68f]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2023-06-09T16:26:55 BDT" finished-at="2023-06-09T16:26:55 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.CucumberRunner$CucumberRunnerTests -->
+    </test> <!-- Cucumber Test Run -->
+  </suite> <!-- Suite -->
+</testng-results>
