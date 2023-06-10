@@ -34,6 +34,10 @@ jobs:
         body: |
           Hi,
           Please find attached the automated test report.
+          
+        file:  //./redx/build/reports/tests/merchantWebUiTest/PaymentsPageSanityTestSuite/PageWiseTests.html
+
+        attachments:  ./build/reports/cucumber/cucumber-html-reports/overview-features.html
         from: Github Actions
         to: santomasrur6774@gmail.com
         content_type: text/html
