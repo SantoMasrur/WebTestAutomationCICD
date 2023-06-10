@@ -32,11 +32,9 @@ jobs:
         password: ${{secrets.EMAIL_PASSWORD}}
         subject: Automated Test Report
         body: |
-          Hi,
-          Please find attached the automated test report.
-          
-        file:  //./build/reports/feature.html
-#         attachments:  ./build/reports/feature.html
+             hello
+#         file:  //./build/reports/feature.html
+        attachments:  ./build/reports/feature.html
         from: Github Actions
         to: santomasrur6774@gmail.com
         content_type: text/html
